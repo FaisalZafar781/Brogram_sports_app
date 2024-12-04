@@ -16,6 +16,13 @@ class BookingDetailScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: AppColors.black),
+          onPressed: () {
+            // Close the current screen (pop the route)
+            Navigator.pop(context);
+          },
+        ),
         title: Center(
           child: Text(
             'Personal Details',
